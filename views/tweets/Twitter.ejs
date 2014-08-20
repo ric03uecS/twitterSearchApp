@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+		<style>
+			body 		{ padding-top:100px; }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h2> The tweets for the keyword <b><%= requesting %></b></h2><br />
+				
+					<% for (var i = 0; i < tweets.length; i++) { %>
+				  		<div>
+				  			<ul>
+				  				<li><%= tweets[i].user.name %></li>
+				  				<ul>
+				  					<li><%= tweets[i].text %></li>
+				  					<li><%= tweets[i].created_at %></li>
+				  					<li><%= tweets[i].user.location %></li>
+				  				</ul>
+				  			</ul>
+				  		</div>
+					<% } %>
+				
+			</div>
+		</div>
+	</body>
+</html>	
+

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+		<style>
+			body 		{ padding-top:100px; }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron text-center">
+				<h1><span class="fa"></span><%= foo %></h1>
+				<form class="search" action="/tweets" method="get"> 
+					<div>
+						<input type="text" class="form-control" id="search" name="search" placeholder="Please Enter the keyword here">
+						<!--<a href = "/database">Database</a>-->
+						<button type="submit" id="submit" class="btn btn-primary">Search</button>
+					</div>			
+				</form>
+				<form class="display" action="/display" method="get">
+					<div>
+						
+						<button type = "submit" id = "submit" class="btn btn-primary">Query DB</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>	
+	
