@@ -6,8 +6,8 @@ var Server = Mongo.Server;
 var MongoClient = Mongo.MongoClient;
 
 var address = process.env.DB_PORT_27017_TCP_ADDR || "localhost";
-var port = process.env.DB_PORT_27017_TCP_PORT || "27017";
-var database = process.env.DB_DATABASE || "Twitter"; 
+var port = process.env.DB_PORT_27017_TCP_PORT || $OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT || "27017";
+var database = process.env.DB_DATABASE || nodejs ||"Twitter"; 
 var mydata;
 var request;
 var documents;
