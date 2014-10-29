@@ -13,3 +13,4 @@ notifications:
              - chandrakanth@shippable.com
          on_success: always
          on_failure: always
+script: cat text.txt
