@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - 0.10.25
+  
+  
+services:
+   - mongodb
+
+notifications:
+     email:
+         recipients:
+             - chandrakanth@shippable.com
+         on_success: always
+         on_failure: always
